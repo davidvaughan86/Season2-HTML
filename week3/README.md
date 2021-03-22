@@ -14,5 +14,8 @@ body = document.querySelector('')
 
 div = document.createElement('')
 
-append.childer('')
+append.child('')
 
+## Forms
+
+labels using for = '' and attached to an input name = '' will link the two.
