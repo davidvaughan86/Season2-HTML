@@ -1,0 +1,13 @@
+.dogForm {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.dogForm input {
+    width: 25%;
+}
+
+.dogForm button {
+    width: 10%;
+}
