@@ -4,10 +4,51 @@
     
 }
 
-.dogForm input {
-    width: 25%;
+
+.userForm {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+.form {
+    width: 35%;
 }
 
-.dogForm button {
-    width: 10%;
+.dogSubmit{
+    width: 20%;
+}
+
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 10px solid white; */
+    margin: 5%;
+    padding: 5%;
+    /* border-radius: 60px;
+    box-shadow: 10px 10px 10px; */
+    /* background-color: gold; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    background-image: url('dog.png');
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: initial;
+    background-size: cover;
+    
+}
+
+body {
+    background-color: #cccccc;
 }
