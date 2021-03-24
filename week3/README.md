@@ -27,9 +27,11 @@ link your stylesheet in the <head> with <link rel='' href=''>
 use dotNotation for calling classes with class=''
 use # for calling elements by id=''
 
+<img src='./positions.png' width='25%'>
+
 Positioning
 
-    <img src='./positions.png' width='25%'>
+    
 
     static - default. not affected by 'left' etc
 
