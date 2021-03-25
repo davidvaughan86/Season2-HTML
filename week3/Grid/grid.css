@@ -38,7 +38,7 @@ body {
     grid-template-rows: .25fr 1.5fr 1.2fr 0.8fr;
     grid-template-areas: 
     'nav nav nav nav'
-    'sidebar main content4 content5'
+    'sidebar main main main'
     'sidebar content1 content2 content3'
     'sidebar footer footer footer'
     ;
@@ -83,7 +83,7 @@ main {
     grid-area: sidebar;
     background: #e84545;
     border: 5px solid white;
-    gap: 45px;
+    
     
 }
 
@@ -114,13 +114,13 @@ footer {
     }
 }
 
-p {
+/* p {
     color: tomato;
     background: navy;
     opacity: .5;
-}
+} */
 
-#content4 {
+/* #content4 {
     grid-area: content4;
     
     background: #53354a;
@@ -139,4 +139,4 @@ p {
     background-image: url('./mountains.jpg');
     background-repeat: repeat-y;
     
-}
+} */
