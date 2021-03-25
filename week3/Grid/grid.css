@@ -1,0 +1,142 @@
+div {
+    font-family: 'Train One', cursive;
+}
+
+h1 {
+    font-family: 'Train One', cursive;
+}
+
+body {
+    background: grey;
+    border: 1px solid black
+}
+
+.div1 {
+    background: grey
+}
+
+.div2 {
+    background: blue
+}
+.div3 {
+    background: white
+}
+.div4 {
+    background: green
+}
+.div5 {
+    background: red
+}
+.div6 {
+    background:purple
+}
+
+.divContainer {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    'nav nav nav nav'
+    'sidebar main content4 content5'
+    'sidebar content1 content2 content3'
+    'sidebar footer footer footer'
+    ;
+    gap: 2px;
+}
+
+
+
+#content1 {
+    grid-area: content1;
+    background: #2b2e4a;
+    border: 5px solid white;
+    background-image: url('./amber.jpg');
+    
+    
+}
+#content2 {
+    grid-area: content2;
+    background: #2b2e4a;
+    border: 5px solid white;
+    background-image: url('./cloe.jpg');
+}
+#content3 {
+    grid-area: content3;
+    background: #2b2e4a;
+    border: 5px solid white;
+    background-image: url('./alfred.jpg');
+
+}
+
+main {
+    grid-area: main;
+    background: #53354a;
+    border: 5px solid white;
+    background-image: url('./beach.jpg');
+    background-repeat: repeat-y;
+    
+    
+}
+
+#sidebar{
+    grid-area: sidebar;
+    background: #e84545;
+    border: 5px solid white;
+    gap: 45px;
+    
+}
+
+nav {
+    grid-area: nav;
+    background: #903749;
+    border: 5px solid white
+}
+
+footer {
+    grid-area: footer;
+    background: #903749;
+    border: 5px solid white
+}
+
+@media only screen and (max-width: 700px) {
+    .divContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(.4fr .4fr 2.2fr 1.2fr 1.2fr);
+        grid-template-areas: 
+        'nav'
+        'sidebar'
+        'main'
+        'content1'
+        'content2'
+        'content3'
+        'footer';
+    }
+}
+
+p {
+    color: tomato;
+    background: navy;
+    opacity: .5;
+}
+
+#content4 {
+    grid-area: content4;
+    
+    background: #53354a;
+    border: 5px solid white;
+    background-image: url('./canyon.jpg');
+    background-repeat: repeat-y;
+    width: 600px
+    
+}
+
+#content5 {
+    grid-area: content5;
+    
+    background: #53354a;
+    border: 5px solid white;
+    background-image: url('./mountains.jpg');
+    background-repeat: repeat-y;
+    
+}
