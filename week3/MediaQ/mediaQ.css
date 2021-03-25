@@ -1,0 +1,72 @@
+.fixed {
+    position: fixed;
+    width: 25%;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+.absolute {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+.sticky {
+    position: sticky;
+    width: 5%;
+    width: 100px;
+    height: 100px;
+    left: 25%;
+    
+    display: flex;
+}
+.mediaQ {
+    position: relative;
+    display:flex;
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width:400px){
+.fixed,
+.aboslute,
+.mediaQ
+.sticky {
+    width:100%;
+    }
+.mediaQ img {
+        display:none;
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+* {
+    box-sizing: border-box;
+}
+
+.nav{
+    overflow:hidden;
+    background-color:yellow
+}
+body {
+    background-color: grey;
+}
+
+.nav a {
+    display: block;
+    text-align: center;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: red
+}
+
+@media screen and (max-width: 650px){
+    .nav a{
+        float: none;
+        width: 100%;
+    }
+}

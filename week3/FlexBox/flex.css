@@ -1,0 +1,67 @@
+.noFlex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flexDirection {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+
+}
+.flexWithFlexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexJustifyCenter {
+    display:flex;
+    justify-content: center;
+
+}
+
+.flexEnd {
+    display: flex;
+    justify-content: end;
+}
+
+.flexSpace{
+    display:flex;
+    justify-content: space-around;
+    background:green
+}
+
+.flexSpaceBetween{
+    display:flex;
+    justify-content: space-between;
+    background: blue
+}
+
+.alignItems {
+    display:flex;
+    align-items: flex-end;
+    background:purple
+}
+
+.divDiv{
+    display:flex;
+    flex-wrap: wrap;
+    background:grey;
+    border: 10px solid red
+}
+
+.divInDiv {
+    display:flex;
+    background:purple;
+    border:10px solid black;
+    flex-wrap: wrap;
+   
+    width: 25%
+}
+
+body {
+    background: greenyellow
+}

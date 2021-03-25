@@ -45,3 +45,19 @@ Positioning
 
 Media Query
     a condition that happens when something is triggered. Usually the size of the screen.
+
+@media
+screen
+and
+(max/min width)
+called like a function
+@media screen () {
+
+}
+
+example:
+@media screen [and] (max-width: 500px {
+    .element {
+        css props
+    }
+})
