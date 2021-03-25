@@ -1,14 +1,17 @@
 # Week 3 HTML CSS JQUERY
 
-## basics
+# basics
+
 doctype
 head
 tags
 elements
 links
 scripts
+ID: unique used to call in CSS with #
+Class: used to call in CSS with dot notation. Does not have to be unique
 
-## JQUERY
+# JQUERY
 
 body = document.querySelector('')
 
@@ -16,11 +19,11 @@ div = document.createElement('')
 
 append.child('')
 
-## Forms
+# Forms
 
 labels using for = '' and attached to an input name = '' will link the two.
 
-## CSS
+# CSS
 
 link your stylesheet in the <head> with <link rel='' href=''>
 
@@ -29,9 +32,11 @@ use # for calling elements by id=''
 
 <img src='./positions.png' width='25%'>
 
+# flex
+
 Positioning
 
-    
+    use Divs to controll Div elements
 
     static - default. not affected by 'left' etc
 
@@ -43,7 +48,7 @@ Positioning
 
     sticky - vuewable when scrolling. Will fix to a spoistiob when user scrolls out of its position.
 
-Media Query
+# Media Query
     a condition that happens when something is triggered. Usually the size of the screen.
 
 @media
@@ -56,8 +61,53 @@ called like a function
 }
 
 example:
-@media screen [and] (max-width: 500px {
+@media screen [and] (max-width: 500px) {
     .element {
         css props
     }
-})
+}
+
+# Grid
+
+set the div to display: grid in css.
+define the columns and rows with grid-template-columns and grid-template-rows
+
+                        ______________________
+                        |fr fr fr fr fr fr fr fr
+                        |fr
+                        |fr
+                        |fr
+                        |fr
+                        |fr
+                        |fr
+
+this is 8 x 7. Using fraction to take up the entire screen evenly. 
+
+ex:
+    display: grid;
+    grid-template-columns: 1fr auto 1fr .5fr;
+    grid-template-rows: 1fr auto 1fr .5fr;
+    height: 100vh;
+    grid-template-area:
+    'main main main main'
+    'sidebar main main main'
+    'sidebar main main main'
+    'footer footer footer footer'
+
+this gives the grid area its layout. It still need to be called within its CSS rules
+
+ex:
+
+main {
+    grid-area:main
+}
+
+.sidebar {
+    grid-area:sidebar
+}
+
+#footer {
+    grid-area: footer
+}
+
+use 'gap' to gap between spaces.
